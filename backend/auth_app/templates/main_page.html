@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/output.css' %}">
+</head>
+<body class="bg-emerald-900">
+    <header class="h-screen flex flex-col justify-center items-center text-amber-50">
+        <div>
+            <label class="text-4xl inline">Username: </label>
+            <h1 class="user_name text-4xl inline">{{ username }}</h1>
+        </div>
+        <div>
+            <label class="text-4xl inline">Email: </label>
+            <h1 class="user_name text-4xl inline">{{ email }}</h1>
+            <h1 class="user_name text-4xl inline">{{ password }}</h1>
+        </div>
+        
+    </header>
+</body>
+</html>
+
